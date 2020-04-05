@@ -14,7 +14,7 @@ const forecast = (latitude,longitude,callback)=>
         else
         {
             callback(undefined,{
-                temperature: 'Currently the weather is '+body.currently.summary+',Temprature is'+body.currently.temperature
+                temperature: 'Currently the weather is '+body.currently.summary+',Temprature is'+body.currently.temperature+'\nThe high temperature is '+body.daily.data[0].temperatureHigh+'\nThe Lowest temperature is '+body.daily.data[0].temperatureLow
             })
         }
     })
